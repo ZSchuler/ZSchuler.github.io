@@ -107,9 +107,9 @@ h2 {
 #contact a {
     text-decoration: none;
     font-weight: bold;
-    color: hsl(240, 47%, 38%);
+    color: hsl(240, 48%, 50%);
 }
 
 #contact a:hover {
-    color: hsl(240, 57%, 55%);
+    color: hsl(240, 87%, 71%);
 }
