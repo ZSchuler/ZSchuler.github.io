@@ -107,6 +107,12 @@ h2 {
     padding-top: 30px;
 }
 
+#skills ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+}
+
 #projects {
     width: 100%;
     height: 60%;
