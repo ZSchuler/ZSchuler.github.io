@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+p, ul {
     color: whitesmoke;
     font-size: 18px;
 }
@@ -20,6 +20,7 @@ h1 {
 
 h2 {
     color: whitesmoke;
+    padding-bottom: 25px;
 }
 
 .navbar {
@@ -97,6 +98,24 @@ h2 {
     overflow: hidden;
     
     text-align: center;
+}
+
+#education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+#education-content h3 {
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0;
+}
+
+#education-content p {
+    margin: 5px 0;
 }
 
 #contact {
