@@ -85,16 +85,6 @@ h2 {
     background-color: hsl(0, 0%, 8%);
 }
 
-#personal a {
-    text-decoration: none;
-    font-weight: bold;
-    color: hsl(240, 48%, 50%);
-}
-
-#personal a:hover {
-    color: hsl(240, 87%, 71%);
-}
-
 #about-me {
     width: 30%;
     text-align: center;
@@ -155,12 +145,12 @@ h2 {
     text-align: center;
 }
 
-#contact a {
+.hyperlink {
     text-decoration: none;
     font-weight: bold;
     color: hsl(240, 48%, 50%);
 }
 
-#contact a:hover {
+.hyperlink:hover {
     color: hsl(240, 87%, 71%);
 }
