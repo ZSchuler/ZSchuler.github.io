@@ -105,10 +105,32 @@ h2 {
 
 #projects {
     width: 100%;
-    height: 60%;
+    height: 120%;
     overflow: hidden;
 
     text-align: center;
+    padding: 20px 0;
+}
+
+#projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 50px;
+}
+
+.project img {
+    box-shadow: 10px 10px 5px rgb(25, 25, 26);
+    width: 250px;
+    height: auto;
 }
 
 #projects p {
@@ -120,16 +142,6 @@ h2 {
     font-weight: bold;
 }
 
-#projects img {
-    box-shadow: 10px 10px 5px rgb(25, 25, 26); 
-}
-
-#projects-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
 
 #education {
     width: 100%;
