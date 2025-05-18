@@ -1,4 +1,4 @@
-# 🚀 Zach's Personal Website  
+# Zach's Personal Website  
 
 Welcome to my personal website! I'm **Zach**, a Computer Science student at Simon Fraser University with a passion for **software engineering**.
 
@@ -17,4 +17,4 @@ Welcome to my personal website! I'm **Zach**, a Computer Science student at Simo
 - 💼 [LinkedIn](https://www.linkedin.com/in/zacharyschuler/)  
 - 🐙 [GitHub](https://github.com/ZSchuler)  
 
-Thanks for visiting! 🚀
+Thanks for visiting!
