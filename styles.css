@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+p.subheading {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #333;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.link {
+  color: #4ea8de;
+  text-decoration: none;
+}
+
+.card .github-btn {
+  display: inline-block;
+  background-color: #525151;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.card .github-btn:hover {
+  background-color: #333;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  transition: background-color 0.2s;
+}
+
+.card a.github-btn {
+  background-color: #24292e;
+}
+
+.card a.website-btn {
+  background-color: #24292e;
+}
+
+.card a:hover {
+  opacity: 0.9;
+}

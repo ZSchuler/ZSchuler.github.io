@@ -1,84 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zachary Schuler</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Schuler</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
-<div id="main-wrapper">
-    <div id="main-text">
-        <div class="typewriter">
-            <h1>zachary schuler</h1>
-        </div>
-        <h2>hey! i'm zach, a computer science student at simon fraser university.</h2>
-        <div id="main-buttons">
-            <a href="https://github.com/ZSchuler" target="_blank"><p>github</p></a>
-            <a href="https://www.linkedin.com/in/zacharyschuler/" target="_blank"><p>linkedin</p></a>
-        </div>
-    </div>
-    <img src="assets/prof-drawing.png" alt="">
-</div>
+  <header class="typewriter">
+    <h1>Zachary Schuler</h1>
+    <p class="subheading">Hey! I'm Zach, a computer science student at Simon Fraser University.</p>
+    <p>GitHub: <a href="https://github.com/ZSchuler" class="link">github.com/ZSchuler</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/zacharyschuler/" class="link">linkedin.com/in/zacharyschuler/</a></p>
+  </header>
 
+  <section>
+    <h2 class="section-heading">Featured Projects</h2>
+    <div class="projects" id="projectContainer"></div>
+  </section>
 
+  <section>
+    <h2 class="section-heading">Education</h2>
+    <p>Bachelor of Computing Science, Simon Fraser University</p>
+    <p>Expected Graduation: Dec. 2027</p>
+    <p>CGPA: 3.98/4.33</p>
+    <p>Awards:</p>
+    <ul>
+        <li>Undergraduate Open Scholarship (Spring/Summer 2025)</li>
+        <li>President's Honour Roll (Fall/Spring 2024)</li>
+    </ul>
+  </section>
 
-
-<div class="section-header">
-    <h3>projects</h3>
-    <div class="underline"></div>
-</div>
-
-<div class="articles-container">
-    <div class="article-card">
-        <img src="assets/fitcheck.PNG" alt="">
-        <div class="content">
-            <h4>FitCheck</h4>
-            <p>FitCheck is a React-based virtual wardrobe that empowers users to express their style with confidence while learning about sustainable fashion. It contains a chatbot that utilizes both Google Gemini and OpenWeatherMap REST APIs to deliver personalized, sustainable fashion advice.</p>
-            <a href="https://project-01-sky.vercel.app/" target="_blank"><button>Take a look!</button></a>
-        </div>
-    </div>
-
-    <div class="article-card">
-        <img src="assets/sandbox.gif" alt="" width="400px">
-        <div class="content">
-            <h4>Grid-Based Sandbox</h4>
-            <p>I built a 2D sandbox game prototype using MonoGame's rendering framework and C# with pixel-based sand simulation. This involved researching and applying algorithms for grid-based physics simulation.</p>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="section-header">
-    <h3>education</h3>
-    <div class="underline"></div>
-</div>
-
-
-<div class="articles-container-center">
-    <div class="article-card center">
-        <img src="assets/SFU-block-logo.png" alt="">
-        <div class="content">
-            <h4>Simon Fraser University</h4>
-            <p>Bachelor of Computing Science</p>
-            <p>CGPA: 3.98</p>
-        </div>
-    </div>
-</div>
-
-<div class="section-header">
-    <h3>contact</h3>
-    <div class="underline"></div>
-    <div class="content">
-        <h4 id="contact-text">For the quickest response, please reach out to me via <a href="https://www.linkedin.com/in/zacharyschuler/" target="_blank">LinkedIn</a>.</h4>
-    </div>
-</div>
-
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
