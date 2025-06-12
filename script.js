@@ -3,7 +3,7 @@ const projects = [
     title: "Rasterization Engine",
     description: "Created a rasterization engine which can load, render, and animate obj files. GitHub repo coming soon!",
     image: "imgs/suzanne.gif",
-    tags: ["C#", "Graphics", "raylib"],
+    tags: ["C#", ".NET", "Graphics", "raylib"],
     },
     {
     title: "Land Grab (Multiplayer Game)",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Virtual Closet Web App",
-    description: "Developed a React web app with a fashion chatbot assistant that recommends outfits based on weather and clothing data.",
+    description: "Collaborated in an Agile team to build a React-based virtual wardrobe that simplifies wardrobe organization",
     image: "imgs/fitcheck.png",
     tags: ["React", "Chatbot", "AI"],
     website: "https://project-01-sky.vercel.app/"
