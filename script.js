@@ -1,9 +1,10 @@
 const projects = [
     {
     title: "Rasterization Engine",
-    description: "Created a rasterization engine which can load, render, and animate obj files. GitHub repo coming soon!",
+    description: "Created a rasterization engine which can load, render, and animate obj files.",
     image: "imgs/suzanne.gif",
     tags: ["C#", ".NET", "Graphics", "raylib"],
+    github: "https://github.com/ZSchuler/rasterization-engine"
     },
     {
     title: "Land Grab (Multiplayer Game)",
