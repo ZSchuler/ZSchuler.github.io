@@ -4,53 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zachary Schuler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="typewriter">
-    <h1>Zachary Schuler</h1>
-    <p class="subheading">Hey! I'm Zach, a computer science student at Simon Fraser University.</p>
-    <p>GitHub: <a href="https://github.com/ZSchuler" class="link">github.com/ZSchuler</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/zacharyschuler/" class="link">linkedin.com/in/zacharyschuler/</a></p>
-  </header>
+  <div class="card">
 
-  <section>
-    <h2 class="section-heading">Featured Projects</h2>
-    <div class="projects" id="projectContainer"></div>
-  </section>
+    <header>
+      <h1>Zachary Schuler</h1>
+      <div class="rule"></div>
+      <p class="subheading">Computer Science student at Simon Fraser University</p>
+      <div class="contact-row">
+        <span class="field">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/ZSchuler" class="link">github.com/ZSchuler</a>
+        </span>
+        <span class="field">
+          <span class="label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/zacharyschuler/" class="link">linkedin.com/in/zacharyschuler</a>
+        </span>
+      </div>
+    </header>
 
-  <section>
-    <h2 class="section-heading">Experience</h2>
+    <section>
+      <h2 class="section-heading">Featured Projects</h2>
+      <div class="projects" id="projectContainer"></div>
+    </section>
 
-      <p>
-        <strong>CBU Validation Engineer Co-op</strong> - Microchip Technology Inc.
-        <span style="color:#aaa;">(January - August 2026)</span>
-      </p>
-      <!-- <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul> -->
+    <section>
+      <h2 class="section-heading">Experience</h2>
+      <div class="entry">
+        <p class="entry-title">CBU Validation Engineer Co-op <span class="entry-org">— Microchip Technology Inc.</span></p>
+        <p class="entry-date">January – August 2026</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Software Developer, Agent Team <span class="entry-org">— SFU Robot Soccer</span></p>
+        <p class="entry-date">July 2025 – Present</p>
+      </div>
+    </section>
 
-      <p>
-        <strong>Software Developer - Agent Team</strong> - SFU Robot Soccer
-        <span style="color:#aaa;">(July 2025 - Present)</span>
-      </p>
+    <section>
+      <h2 class="section-heading">Education</h2>
+      <div class="entry">
+        <p class="entry-title">Bachelor of Computing Science <span class="entry-org">— Simon Fraser University</span></p>
+        <p class="entry-date">Expected Graduation: December 2027 &nbsp;·&nbsp; CGPA: 4.03 / 4.33</p>
+      </div>
+      <p class="awards-label">Awards</p>
+      <ul class="awards">
+        <li>Undergraduate Open Scholarship (Spring / Summer / Fall 2025)</li>
+        <li>President's Honour Roll (Fall 2024 / Spring 2025)</li>
+      </ul>
+    </section>
 
-  </section>
-
-  <section>
-    <h2 class="section-heading">Education</h2>
-    <p>Bachelor of Computing Science, Simon Fraser University</p>
-    <p>Expected Graduation: Dec. 2027</p>
-    <p>CGPA: 4.03/4.33</p>
-    <p>Awards:</p>
-    <ul>
-        <li>Undergraduate Open Scholarship (Spring/Summer/Fall 2025)</li>
-        <li>President's Honour Roll (Fall 2024/Spring 2025)</li>
-    </ul>
-  </section>
-
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

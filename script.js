@@ -1,22 +1,19 @@
 const projects = [
-    {
+  {
     title: "Rasterization Engine",
     description: "Created a rasterization engine which can load, render, and animate obj files.",
-    image: "imgs/suzanne.gif",
     tags: ["C#", ".NET", "Graphics", "raylib"],
     github: "https://github.com/ZSchuler/rasterization-engine"
-    },
-    {
+  },
+  {
     title: "Land Grab (Multiplayer Game)",
     description: "Collaborated in a team of 4 to build a real-time competitive game using custom socket programming.",
-    image: "imgs/landgrab.gif",
     tags: ["Python", "Pygame", "Socket Programming", "Git"],
     github: "https://github.com/Hooopla/Land-Grab"
   },
   {
     title: "Virtual Closet Web App",
-    description: "Collaborated in an Agile team to build a React-based virtual wardrobe that simplifies wardrobe organization",
-    image: "imgs/fitcheck.png",
+    description: "Collaborated in an Agile team to build a React-based virtual wardrobe that simplifies wardrobe organization.",
     tags: ["React", "Chatbot", "AI"],
     website: "https://project-01-sky.vercel.app/"
   },
@@ -25,12 +22,8 @@ const projects = [
 const container = document.getElementById('projectContainer');
 
 projects.forEach(project => {
-  const card = document.createElement('div');
-  card.className = 'card';
-
-  const img = document.createElement('img');
-  img.src = project.image;
-  img.alt = project.title;
+  const item = document.createElement('div');
+  item.className = 'project';
 
   const title = document.createElement('h3');
   title.textContent = project.title;
@@ -38,40 +31,34 @@ projects.forEach(project => {
   const desc = document.createElement('p');
   desc.textContent = project.description;
 
-  const tagList = document.createElement('div');
-  tagList.className = 'tags';
+  const tags = document.createElement('div');
+  tags.className = 'tags';
+  tags.textContent = project.tags.join(' · ');
 
-  project.tags.forEach(tag => {
-    const tagEl = document.createElement('span');
-    tagEl.className = 'tag';
-    tagEl.textContent = tag;
-    tagList.appendChild(tagEl);
-  });
+  const links = document.createElement('div');
+  links.className = 'project-links';
 
-  card.appendChild(img);
-  card.appendChild(title);
-  card.appendChild(desc);
-  card.appendChild(tagList);
-
-  // if website exists
   if (project.website) {
-    const siteBtn = document.createElement('a');
-    siteBtn.className = 'website-btn';
-    siteBtn.href = project.website;
-    siteBtn.target = '_blank';
-    siteBtn.textContent = 'View Site';
-    card.appendChild(siteBtn);
+    const siteLink = document.createElement('a');
+    siteLink.href = project.website;
+    siteLink.target = '_blank';
+    siteLink.rel = 'noopener';
+    siteLink.textContent = 'View Site';
+    links.appendChild(siteLink);
   }
 
-  // if github exists
   if (project.github) {
-    const githubBtn = document.createElement('a');
-    githubBtn.className = 'github-btn';
-    githubBtn.href = project.github;
-    githubBtn.target = '_blank';
-    githubBtn.textContent = 'View on GitHub';
-    card.appendChild(githubBtn);
+    const githubLink = document.createElement('a');
+    githubLink.href = project.github;
+    githubLink.target = '_blank';
+    githubLink.rel = 'noopener';
+    githubLink.textContent = 'View on GitHub';
+    links.appendChild(githubLink);
   }
 
-  container.appendChild(card);
+  item.appendChild(title);
+  item.appendChild(desc);
+  item.appendChild(tags);
+  item.appendChild(links);
+  container.appendChild(item);
 });
